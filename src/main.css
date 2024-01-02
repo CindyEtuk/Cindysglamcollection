@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+
+}
+
+.nav-one a{text-decoration: none; font-style: italic;
+    font-family: cursive;}
+.nav-one h1{font-style: italic;font-family: cursive;}
+.nav-one h2{font-size: small; margin-left: 40px;}
+.nav-one  a{
+    margin-left: 40px; text-transform: capitalize;
+    text-shadow: 5px 4px 11px rgb(0 0 0 / 30%);font-size: 30px;
+    letter-spacing: 1px;color: palevioletred;
+    text-shadow: 2px 5px 3px rgb(0 0 0 / 26%);
+}
+
+
+
+
+      /* video-section */
+    .video-section{ background-color: rgb(228, 214, 228);}
+    .video-section h2{
+        text-align: center;
+        color: palevioletred;
+        background-color: white;
+        padding: 30px 50px; font-style: oblique; 
+    }
+
+        /* section-one */
+
+        /* section-two */
+        .csslider {
+         text-align: left;
+        position: relative;
+          margin-bottom: 0
+          }
+         *, *::before, *::after {
+         box-sizing: border-box;
+          }
+/* slidder */
+     .containerSlider{
+       width: 100%;
+      height: 600px;
+       object-fit: cover;padding: 20px;
+         
+     }
+
+        .section1-container{
+            width: 100%;
+            height: 700px; 
+            background-color: rgb(228, 214, 228);
+        }
+        .section-one{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-auto-rows: 200px 200px;
+            grid-gap: 20px;
+            
+        }
+        .section-side-2 img{
+            width: 100%;
+             height: 600px;
+        }
+        .section1-side1{
+            width: 100%;
+            padding: 100px;
+        }
+        .section1-side1 h3{
+            line-height: 1.5;
+            text-shadow: 5px 4px 11px rgb(0 0 0 / 26%);
+            letter-spacing: 1px;
+            color: #464545; font-family: 'Poiret One', cursive;
+            letter-spacing: 2px;font-size: 45px;
+        }
+        .section1-side1 h6{
+            color: grey;padding-top:10px ; 
+        }
+        .section1-side1 button{
+            padding: 10px 20px; color: white; background-color: palevioletred;
+            border: palevioletred; margin-top:50px ; 
+        }
+    
+
+
+      
+
+    
+.box{
+    width: 400px;
+    height: 40px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    margin-top: 20px;
+} 
+.box >  i {
+    font-size: 20px;
+    color: gray;
+}
+.box > input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px;
+    background-color: whitesmoke;
+}
+.box > ::placeholder{
+    font-size: 15px;
+    background-color: whitesmoke;
+}
