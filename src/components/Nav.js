@@ -3,9 +3,9 @@ import '../App.css';
 import '../main.css';
 import { Link } from "react-router-dom";
 import { CartData } from "../App";
-import img from "../img/cart.jpg"
+import img from "../img/cart.png"
 import login from "../img/login.jpg"
- 
+import { slide as Menu } from 'react-burger-menu';
 
 
 
@@ -71,10 +71,10 @@ export default function Nav(props){
    
            </div> 
 
-    
-        </div>
+
+
         
-       
+       </div>
        
        
     )

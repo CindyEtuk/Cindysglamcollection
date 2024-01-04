@@ -1,9 +1,6 @@
 import react from "react";
 import '../App.css';
 import '../main.css';
-import { Link } from "react-router-dom";
-import { CartData } from "../App";
-import img from "../img/cart.jpg"
 import login from "../img/cindysglam-logo.jpg"
  
 

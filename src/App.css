@@ -39,7 +39,7 @@ font-style: italic;  width: 100%; color: white; padding-left: 30px; }
 
 
   .ProductView{
-    background-color: white; color: gray;
+    background-color: whitesmoke; color: gray;
     border-radius: 2px; line-height: 35px;
     padding: 10px; text-transform: uppercase;
     text-align: center;
@@ -85,7 +85,7 @@ margin-top: 150px;
  }
 
   .add2cart-view{
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(2, 1fr);
     gap: 30px; padding: 20px;
     color: black; text-transform: capitalize;
@@ -441,9 +441,6 @@ background-color: palevioletred; font-size: 16px; border: 1px solid palevioletre
       line-height: 22px;
       letter-spacing: .05px; padding:5px 30px;
       color:gray; font-size: 16px; }
-
-
-
 
 
 }

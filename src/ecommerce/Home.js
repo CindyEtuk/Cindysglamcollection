@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import img from "../img/pic1.jpg"
 import Nav from "../components/Nav";
 import Body from "../components/Body";
+import Sidebar from "../components/Sidebar";
 import { CartData } from "../App";
-import img1 from "../img/cart.jpg"
+import img1 from "../img/cart.png"
 
 const Home=()=>  {
    
@@ -13,18 +14,37 @@ const Home=()=>  {
         <div className="Shopview" >
             <Nav/>
 
-
+<div className="topnav-container">
+    
             <div className="topnav">
+
+            <Sidebar/>
+            
   <a href="index.html" >
   <div className="nav-one">
-               <h1><a href="#">cindys glam</a></h1> 
+               <h1><a href="/home">cindys glam</a></h1> 
                <h2>...Defining your style</h2> 
                </div> 
      </a>
 
+     
+
+<div className="nav-4">
+               <Link className="link" to="/Cart">
+                    
+                    <CartData.Consumer>
+                        {(cartData)=> {
+                            return<div >
+                         <img src={img1} alt=""  />  ({cartData.length})</div>}}
+               </CartData.Consumer>
+               </Link>
+               </div>
+               <br/>
+               
+               
 
 </div>
-
+</div>
            <div className="banner">
            
            <div className="banner-content">
@@ -35,7 +55,8 @@ const Home=()=>  {
              <br/>cool leather jackets for any occasion
              shop for all things glam . 
            </p>
-           <button className="bannerBtn">Discover</button>
+           <Link className="link" to="/Shop">
+              <button  className="bannerBtn">Explore</button></Link>
             <button className="bannerBtn-2">Add to Cart</button>
 
 

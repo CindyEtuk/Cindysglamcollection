@@ -1,8 +1,11 @@
 import { react, useState } from "react";
 import { useParams } from "react-router-dom";
-import { CartData } from "../App";
 import Products from "../components/products";
 import img from "../img/img3.jpg"
+import Sidebar from "../components/Sidebar";
+import { CartData } from "../App";
+import img1 from "../img/cart.png";
+import { Link } from "react-router-dom";
 
 
 import Nav from "../components/Nav";
@@ -12,7 +15,37 @@ const Cart = (props) => {
     return (
         <div className="Add2Cart">
             <Nav />
-            <br />
+            <div className="topnav-container">
+    
+            <div className="topnav">
+
+            <Sidebar/>
+            
+  <a href="index.html" >
+  <div className="nav-one">
+               <h1><a href="/home">cindys glam</a></h1> 
+               <h2>...Defining your style</h2> 
+               </div> 
+     </a>
+
+     
+
+<div className="nav-4">
+               <Link className="link" to="/Cart">
+                    
+                    <CartData.Consumer>
+                        {(cartData)=> {
+                            return<div >
+                         <img src={img1} alt=""  />  ({cartData.length})</div>}}
+               </CartData.Consumer>
+               </Link>
+               </div>
+            
+               
+               
+
+</div>
+</div>
             <div className="cart-row">
                 <div className="col">
                     <h1>Shoping cart</h1>
